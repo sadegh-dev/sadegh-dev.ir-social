@@ -4,6 +4,11 @@ from .managers import MyUserManager
 
  
 class User(AbstractBaseUser):
+    '''
+    class of Custom User
+
+    email field is Primary-Key
+    '''
     email =         models.EmailField(max_length=254, unique=True)
     #password
 
