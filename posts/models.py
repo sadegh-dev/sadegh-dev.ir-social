@@ -4,6 +4,11 @@ from django.urls import reverse
 
 
 class Category(models.Model):
+    '''
+    Category class model
+
+    name field is not primaryKey.
+    '''
     name =     models.CharField(max_length=50)
 
     def __str__(self):
