@@ -18,6 +18,11 @@ class Category(models.Model):
 
 
 class Post(models.Model):
+    '''
+    The Post Model Class
+
+    User and Category are ForeignKey
+    '''
     user =      models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name='posts')
     category =  models.ForeignKey(Category, on_delete=models.CASCADE, null=True, blank=True, related_name='cposts')
     body =      models.TextField(max_length=500)
