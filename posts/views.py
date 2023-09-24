@@ -7,6 +7,10 @@ from django.contrib import messages
 
 
 def all_posts(request):
+    ''' post list function
+
+        the list of records is without any filter
+    '''
     posts = Post.objects.all()
     categories = Category.objects.all()
     context = {
