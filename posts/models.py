@@ -5,7 +5,7 @@ from django.urls import reverse
 
 class Category(models.Model):
     '''
-    Category class model
+    Category class model in blog app
 
     name field is not primaryKey.
     '''
